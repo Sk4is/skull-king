@@ -9,6 +9,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw; /* Evita el desbordamiento horizontal */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del elemento */
 }
 
 .title {
@@ -19,7 +22,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 120%;
+    width: 100%; /* Ajustar a 100% para evitar desbordamientos */
     max-width: 1400px;
     gap: 400px;
 }
@@ -159,13 +162,19 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Asegura que el ancho no se vea afectado por el padding y border */
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 50px;
+        gap: 30px; /* Reducir aún más el espacio entre los elementos */
         width: 100%;
-        padding: 20px;
+        max-width: 100%; /* Asegura que no se salga del contenedor */
     }
 
     .left-content {
@@ -174,52 +183,47 @@ body {
     }
 
     .cards {
-        width: 90%;
+        width: 60%; /* Cambiar de 80% a 100% */
         margin-bottom: 40px;
-        margin-top: 0;
-    }
-
-    .cards img {
-        width: 50%;
-        margin-top: -120%;
+        margin-top: -60%;
     }
 
     .logoStart {
-        width: 120%;
-        margin-bottom: 30px;
+        width: 100%; /* Cambiar de 120% a 100% */
+        margin-bottom: 20px; /* Reducir el margen inferior */
     }
 
     .logoStart img {
-        width: 60%;
+        width: 80%; /* Cambiar de 60% a 80% */
+        height: auto;
     }
 
     .right-content {
         width: 100%;
-        padding: 0 20px;
-        margin-bottom: 25%;
-        margin-top: -40%;
+        margin-bottom: 20%; /* Reducir el margen inferior */
     }
 
     .title h1 {
-        font-size: 2.5rem;
+        font-size: 40px; /* Reducir aún más el tamaño de la fuente */
+        margin: 15px 0;
     }
 
     .options p {
-        font-size: 24px;
+        font-size: 16px; /* Reducir aún más el tamaño del texto */
     }
 
     .options button {
-        width: 90%;
-        font-size: 22px;
+        width: 100%; /* Hacer los botones más grandes para móviles */
+        font-size: 18px;
         padding: 12px 20px;
     }
 
     .divider {
-        width: 90%;
+        width: 80%; /* Cambiar el width a 100% */
         margin: 30px 0;
     }
 
     .divider span {
-        font-size: 18px;
+        font-size: 14px; /* Reducir el tamaño del texto del divisor */
     }
 }
