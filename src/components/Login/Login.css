@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://res.cloudinary.com/dimlqpphf/image/upload/v1741303245/descarga_1_qynuqx.gif) no-repeat center center/cover;
+    background: url(https://res.cloudinary.com/dimlqpphf/image/upload/v1743248088/image_1_1_1_1_gxyite.png) no-repeat center center/cover;
     position: relative;
 }
 
@@ -34,8 +34,10 @@
 }
 
 .login-box h2 {
+    font-size: 40px;
+    margin-top: -10px;
     margin-bottom: 40px;
-    color: #ffffff;
+    color: #E89B04;
 }
 
 .input-group {
@@ -47,7 +49,7 @@
 }
 
 .input-group label {
-    font-size: 14px;
+    font-size: 25px;
     color: #fff;
     display: block;
     align-self: flex-start;
@@ -55,13 +57,14 @@
 }
 
 .input-group input {
+    font-family: 'Pirata One', cursive;
     width: 80%;
     padding: 10px;
     margin-top: 5px;
     color: rgb(0, 0, 0);
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     background-color: #f9f9f9;
 }
 
@@ -109,8 +112,8 @@
     padding: 10px;
     margin-top: 60px;
     background-color: #35b977;
-    color: white;
-    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;

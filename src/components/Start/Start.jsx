@@ -15,7 +15,6 @@ const Start = () => {
 
   return (
     <div className="container">
-      {/* 📌 Contenedor izquierdo (Cartas y Logo) */}
       <div className="left-content">
         <div className="logoStart">
           <img
@@ -31,12 +30,11 @@ const Start = () => {
         </div>
       </div>
 
-      {/* 📌 Contenedor derecho (Texto y Botones) */}
       <div className="right-content">
         <div className="title">
-          <h1>Tu biblioteca</h1>
-          <h1>Tu mundo</h1>
-          <h1>Tu juego.</h1>
+          <h1>¡Engaña,</h1>
+          <h1>Apuesta</h1>
+          <h1>Y conquista los mares!</h1>
         </div>
         <p>Únete ya.</p>
         <button className="register" onClick={handleRegisterRedirect}>

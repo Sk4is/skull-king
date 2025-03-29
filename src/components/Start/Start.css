@@ -1,37 +1,37 @@
-/* Estilos generales */
 body {
     background-image: url('https://res.cloudinary.com/dimlqpphf/image/upload/v1743203248/image_qfahxa.png');
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center center; /* Centra la imagen */
-    background-attachment: fixed; /* Fija la imagen al fondo para que no se mueva al hacer scroll */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     color: white;
-    min-height: 100vh; /* Asegura que el body tenga al menos la altura de la pantalla */
+    min-height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Contenedor principal */
-.container {
-    display: flex;
-    justify-content: flex-start; /* Alinea a la izquierda */
-    align-items: center; /* Centra verticalmente */
-    width: 120%;
-    max-width: 1400px;
-    gap: 400px; /* Espacio entre columnas */
+.title {
+    color: #E89B04;
 }
 
-/* Columna izquierda: Cartas arriba, Logo abajo */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 120%;
+    max-width: 1400px;
+    gap: 400px;
+}
+
 .left-content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el logo y las cartas */
-    flex: 0 0 300px; /* Ajusta el tamaño de la columna de izquierda */
+    align-items: center;
+    flex: 0 0 300px;
     width: auto;
 }
 
-/* Estilos de las cartas */
 .cards {
     display: flex;
     justify-content: center;
@@ -46,7 +46,6 @@ body {
     height: auto;
 }
 
-/* Estilos del logo */
 .logoStart {
     display: flex;
     justify-content: center;
@@ -60,96 +59,88 @@ body {
     height: auto;
 }
 
-/* Columna derecha: Contenido centrado */
 .right-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centra el contenido a la derecha */
+    align-items: center;
     text-align: center;
     flex: 1;
     margin-bottom: 10%;
 }
 
-/* Estilos de los títulos */
 .title h1 {
-    margin: 25px 0; /* Más espacio entre los títulos */
-    font-size: 60px; /* Hacer el tamaño de la fuente más grande */
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Sombra en el texto */
+    margin: 25px 0;
+    font-size: 60px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
 }
 
-/* Estilos del párrafo */
 .options p {
-    font-size: 45px; /* Aumentar el tamaño del texto */
-    margin-bottom: 40px; /* Más espacio después del párrafo */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+    font-size: 45px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilos de los botones */
 .options button {
-    width: 250px; /* Botones más anchos */
-    padding: 16px 30px; /* Botones más altos */
-    font-size: 50px; /* Aumentar tamaño de fuente */
+    width: 250px;
+    padding: 16px 30px;
+    font-size: 50px;
     font-weight: bold;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease, color 0.3s ease; /* Transición suave */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra en el texto del botón */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Sombra alrededor del botón */
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease, color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilos del botón de registro */
 .register {
     font-size: 25px;
     background-color: #ffffff;
     color: black;
     cursor: pointer;
-    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease, color 0.3s ease; /* Transición suave */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra en el texto del botón */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Sombra alrededor del botón */
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease, color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     border: none;
 }
 
 .register:hover {
     background-color: #cfcfcf;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el ratón por encima */
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
-    color: #333; /* Cambiar color del texto al hacer hover */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    color: #333;
 }
 
-/* Estilos del botón de login */
 .login {
     font-size: 25px;
     background-color: #35b977;
     color: white;
     cursor: pointer;
-    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease, color 0.3s ease; /* Transición suave */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra en el texto del botón */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Sombra alrededor del botón */
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease, color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     border: none;
 }
 
 .login:hover {
     background-color: #1e8d56;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el ratón por encima */
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
-    color: #f1f1f1; /* Cambiar color del texto al hacer hover */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    color: #f1f1f1;
 }
 
-/* Estilos del párrafo en la derecha */
 .right-content p {
     font-size: 20px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra en el texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-/* Línea divisora entre botones */
 .divider {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70%;
-    margin: 40px 0; /* Aumenta el margen de la línea divisoria */
+    margin: 40px 0;
 }
 
 .divider::before,
@@ -157,44 +148,78 @@ body {
     content: "";
     flex: 1;
     height: 2px;
-    background-color: #E89B04; /* Color dorado para la línea divisoria */
-    margin: 0 20px; /* Más espacio en los lados */
+    background-color: #E89B04;
+    margin: 0 20px;
 }
 
 .divider span {
-    font-size: 24px; /* Aumenta el tamaño de la fuente en la línea divisoria */
+    font-size: 24px;
     font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Diseño responsive para móviles */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 80px; /* Mayor espacio entre los elementos */
+        gap: 50px;
+        width: 100%;
+        padding: 20px;
     }
 
-    .left-content, .right-content {
-        align-items: center;
-        text-align: center;
+    .left-content {
+        width: 100%;
+        flex: none;
     }
 
-    .options {
-        align-items: center;
+    .cards {
+        width: 90%;
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+
+    .cards img {
+        width: 50%;
+        margin-top: -120%;
+    }
+
+    .logoStart {
+        width: 120%;
+        margin-bottom: 30px;
+    }
+
+    .logoStart img {
+        width: 60%;
+    }
+
+    .right-content {
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 25%;
+        margin-top: -40%;
     }
 
     .title h1 {
-        font-size: 3rem; /* Ajustar tamaño de fuente en móviles */
+        font-size: 2.5rem;
     }
 
     .options p {
-        font-size: 30px; /* Ajustar tamaño de fuente en móviles */
+        font-size: 24px;
     }
 
     .options button {
-        width: 250px; /* Ajustar tamaño de los botones */
-        font-size: 20px;
+        width: 90%;
+        font-size: 22px;
+        padding: 12px 20px;
+    }
+
+    .divider {
+        width: 90%;
+        margin: 30px 0;
+    }
+
+    .divider span {
+        font-size: 18px;
     }
 }

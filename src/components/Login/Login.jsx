@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './login.css';
 import Swal from 'sweetalert2';
 
@@ -23,31 +24,36 @@ const Login = () => {
     setShowPassword(!showPassword);
   };
 
-  const validateForm = (e) => {
-    e.preventDefault();
+const navigate = useNavigate();
 
-    if (!emailRegex.test(email)) {
-      setErrorMessage('Por favor, ingresa un correo electrónico válido.');
-      return;
-    }
+const validateForm = (e) => {
+  e.preventDefault();
 
-    if (!passwordRegex.test(password)) {
-      setErrorMessage('La contraseña debe tener al menos 8 caracteres, una mayúscula, un número y un símbolo.');
-      return;
-    }
+  if (!emailRegex.test(email)) {
+    setErrorMessage('Por favor, ingresa un correo electrónico válido.');
+    return;
+  }
 
-    setErrorMessage('');
-    Swal.fire({
-      icon: 'success',
-      title: '¡Éxito!',
-      text: 'Formulario validado correctamente.',
-      confirmButtonText: 'Aceptar',
-      confirmButtonColor: '#35b977',
-      background: '#1a1a1a',
-      color: '#fff',
-      iconColor: '#35b977',
-    });
-  };
+  if (!passwordRegex.test(password)) {
+    setErrorMessage('La contraseña debe tener al menos 8 caracteres, una mayúscula, un número y un símbolo.');
+    return;
+  }
+
+  setErrorMessage('');
+
+  Swal.fire({
+    icon: 'success',
+    title: '¡Éxito!',
+    text: 'Formulario validado correctamente.',
+    confirmButtonText: 'Aceptar',
+    confirmButtonColor: '#35b977',
+    background: '#1a1a1a',
+    color: '#fff',
+    iconColor: '#35b977',
+  }).then(() => {
+    navigate('/gamemode');
+  });
+};
 
   return (
     <div className="login-page">
@@ -76,7 +82,7 @@ const Login = () => {
                   required
                 />
                 <span className="password-toggle" onClick={togglePassword}>
-                  {showPassword ? '🙈' : '👁️'}
+                  {showPassword ? '☠️' : '💀'}
                 </span>
               </div>
             </div>
