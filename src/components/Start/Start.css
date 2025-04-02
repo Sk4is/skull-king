@@ -1,4 +1,4 @@
-body {
+.container {
     background-image: url('https://res.cloudinary.com/dimlqpphf/image/upload/v1743203248/image_qfahxa.png');
     background-size: cover;
     background-position: center center;
@@ -9,22 +9,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw; /* Evita el desbordamiento horizontal */
-    overflow-x: hidden; /* Evita el desbordamiento horizontal */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del elemento */
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .title {
     color: #E89B04;
-}
-
-.container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%; /* Ajustar a 100% para evitar desbordamientos */
-    max-width: 1400px;
-    gap: 400px;
 }
 
 .left-content {
@@ -33,6 +24,7 @@ body {
     align-items: center;
     flex: 0 0 300px;
     width: auto;
+    margin-left: 20%;
 }
 
 .cards {
@@ -70,6 +62,7 @@ body {
     text-align: center;
     flex: 1;
     margin-bottom: 10%;
+    margin-left: 10%;
 }
 
 .title h1 {
@@ -165,65 +158,67 @@ body {
     body {
         margin: 0;
         padding: 0;
-        box-sizing: border-box; /* Asegura que el ancho no se vea afectado por el padding y border */
+        box-sizing: border-box;
     }
 
     .container {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 30px; /* Reducir aún más el espacio entre los elementos */
+        gap: 30px;
         width: 100%;
-        max-width: 100%; /* Asegura que no se salga del contenedor */
+        max-width: 100%;
     }
 
     .left-content {
         width: 100%;
         flex: none;
+        margin-left: -1%;
     }
 
     .cards {
-        width: 60%; /* Cambiar de 80% a 100% */
+        width: 60%;
         margin-bottom: 40px;
         margin-top: -60%;
     }
 
     .logoStart {
-        width: 100%; /* Cambiar de 120% a 100% */
-        margin-bottom: 20px; /* Reducir el margen inferior */
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .logoStart img {
-        width: 80%; /* Cambiar de 60% a 80% */
+        width: 80%;
         height: auto;
     }
 
     .right-content {
         width: 100%;
-        margin-bottom: 20%; /* Reducir el margen inferior */
+        margin-bottom: 20%;
+        margin-left: -1%;
     }
 
     .title h1 {
-        font-size: 40px; /* Reducir aún más el tamaño de la fuente */
+        font-size: 40px;
         margin: 15px 0;
     }
 
     .options p {
-        font-size: 16px; /* Reducir aún más el tamaño del texto */
+        font-size: 16px;
     }
 
     .options button {
-        width: 100%; /* Hacer los botones más grandes para móviles */
+        width: 100%;
         font-size: 18px;
         padding: 12px 20px;
     }
 
     .divider {
-        width: 80%; /* Cambiar el width a 100% */
+        width: 80%;
         margin: 30px 0;
     }
 
     .divider span {
-        font-size: 14px; /* Reducir el tamaño del texto del divisor */
+        font-size: 14px;
     }
 }

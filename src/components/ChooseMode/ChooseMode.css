@@ -1,0 +1,99 @@
+.gamemode-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://res.cloudinary.com/dimlqpphf/image/upload/v1743519753/image_3_v4mf1v.png) no-repeat center center/cover;
+    position: relative;
+}
+
+.gamemode-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.gamemode-box {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 550px;
+    height: auto;
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 5%;
+}
+
+.gamemode-box h2 {
+    font-size: 50px;
+    margin-top: -10px;
+    margin-bottom: 70px;
+    color: #E89B04;
+}
+
+.gamemode-box h3 {
+    font-size: 25px;
+    color: #E89B04;
+
+}
+.create-btn {
+    margin-bottom: -30px;
+}
+
+.join-btn {
+    margin-top: -30px;
+}
+
+.create-btn, .join-btn {
+    font-size: 30px;
+    background-color: #35b977;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease, color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.create-btn:hover, .join-btn:hover {
+    background-color: #1e8d56;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    border: none;
+}
+
+.extra-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.rules-btn, .history-btn {
+    font-size: 18px;
+    background-color: #E89B04;
+    color: white;
+    cursor: pointer;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 20%; /* Ajusta el ancho para que queden bien alineados */
+    text-align: center;
+}
+
+.rules-btn:hover, .history-btn:hover {
+    background-color: #c47f03;
+    transform: scale(1.05);
+}
