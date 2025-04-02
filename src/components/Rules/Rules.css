@@ -6,8 +6,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://res.cloudinary.com/dimlqpphf/image/upload/v1743519753/image_3_v4mf1v.png) no-repeat center center/cover;
+    background: url(https://res.cloudinary.com/dimlqpphf/image/upload/v1743618249/artwork_4_1_wuq1vs.png) no-repeat;
+    background-position: calc(100%) center;
+    background-size: 105%;
     position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .back-btn {
@@ -28,18 +32,113 @@
     border: none;
 }
 
-/*
-.rules-page::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
-    background: url(https://res.cloudinary.com/dimlqpphf/image/upload/v1743521645/is-it-normal-that-some-logbooks-are-empty-v0-82xkrd9wsqzd1-removebg-preview_1_1_qamrpd.png) no-repeat center center;
-    background-size: contain;
-    opacity: 0.8;
-    z-index: 0;
+.rules-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-*/
+
+.rules-container {
+    color: #000000;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 26%;
+    position: relative;
+}
+
+.rules-container h1 {
+    margin-top: 58%;
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.rules-container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.rules-container p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    white-space: pre-line;
+}
+
+.rules-container ul {
+    padding-left: 20px;
+    text-align: left;
+    list-style-type: disc;
+}
+
+.rule-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rule-block-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+    margin-top: 65%;
+}
+
+.rule-block {
+    width: 48%;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.rule-block-container .rule-block:nth-child(2) {
+    position: relative;
+    top: -60px;
+}
+
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+.slick-prev, .slick-next {
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    padding: 10px;
+}
+
+.slick-prev {
+    left: -140px;
+}
+
+.slick-next {
+    right: -110px;
+}
+
+.slick-prev::before, .slick-next::before {
+    content: '←';
+    font-size: 40px;
+}
+
+.slick-next::before {
+    content: '→';
+    font-size: 40px;
+}
